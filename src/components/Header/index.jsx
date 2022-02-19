@@ -8,19 +8,20 @@ const Header = () => {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
+        margin: "5px 0",
       }}
     >
-      <Avatar sx={{ m: "5px 0", bgcolor: "secondary.dark" }}>
+      <Avatar sx={{ bgcolor: "secondary.dark" }}>
         <AssignmentIcon sx={{ color: "common.lightestGray" }} />
       </Avatar>
       <Typography
         component="h2"
         sx={{
+          mt: "10px",
           textAlign: "center",
           fontSize: "15px",
           fontWeight: "bold",
           color: "common.darkGray",
-          m: "5px 0",
         }}
       >
         Cadastre-se agora!!

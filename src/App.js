@@ -1,14 +1,16 @@
 import "./App.css";
 import { ThemeProvider } from "@mui/material/styles";
 import { theme } from "./styles/theme";
-import Form from "./pages/Form";
 import { CssBaseline } from "@mui/material";
+import Routes from "./routes";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Form />
+      <Toaster />
+      <Routes />
     </ThemeProvider>
   );
 }

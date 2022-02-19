@@ -13,8 +13,8 @@ const Instructions = () => {
     transform: "translate(-50%, -50%)",
     width: "100%",
     maxWidth: "350px",
-    bgcolor: "background.paper",
-    border: "2px solid #000",
+    bgcolor: "background.start",
+    border: "2px solid #9c27b0",
     boxShadow: 24,
     p: "10px",
   };
@@ -79,6 +79,16 @@ const Instructions = () => {
             <Typography sx={styleList}>
               Validação da senha: Você deverá digitar exatamente a mesma senha
               que foi passada no campo de senha
+            </Typography>
+          </Box>
+          <Box sx={{ display: "flex" }}>
+            <ArrowRightIcon />
+            <Typography sx={styleList}>
+              Quando se cadastrar, seu nome ficará salvo e será possível voltar
+              à página de cadastro e acessar sua sessão atual novamente clicando
+              no botão "ENTRAR EM SESSÃO ATUAL", caso clique em deslogar, seu
+              nome será apagado da memória e para acessar a página novamente
+              você terá que realizar um novo cadastro.
             </Typography>
           </Box>
           <Box sx={{ display: "flex" }}>

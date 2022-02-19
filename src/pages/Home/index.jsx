@@ -34,6 +34,7 @@ const Home = () => {
   return (
     <Container
       component="main"
+      maxWidth="xl"
       sx={{
         boxSizing: "border-box",
         height: "100vh",

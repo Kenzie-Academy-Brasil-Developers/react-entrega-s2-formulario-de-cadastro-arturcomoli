@@ -14,13 +14,16 @@ import { useState } from "react";
 import toast from "react-hot-toast";
 
 const FormBody = () => {
-  const [user, setUser] = useState([]);
+  const [, setUser] = useState([]);
   const local = localStorage.getItem("name");
   const schema = yup.object().shape({
     name: yup
       .string()
       .required("Campo obrigatório")
-      .matches(/^[A-zÀ-ú]*(.*[A-z-À-ú])$/, "Nome fora do padrão requerido"),
+      .matches(
+        /^[A-zÀ-ú]*([A-z-À-ú ]*[A-z-À-ú])$/,
+        "Nome fora do padrão requerido"
+      ),
     email: yup
       .string()
       .email("E-mail fora do padrão")
